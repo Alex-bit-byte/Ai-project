@@ -1,12 +1,12 @@
 import Foundation
 
-enum IncomeCategory: Equatable {
+enum IncomeCategory: Equatable, Hashable {
     case salary
     case bonus
     case other
 }
 
-enum IncomeRecurrence: Equatable {
+enum IncomeRecurrence: Equatable, Hashable {
     case oneTime
     case monthly
 }

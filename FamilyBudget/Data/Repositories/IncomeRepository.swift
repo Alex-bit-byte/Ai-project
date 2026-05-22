@@ -1,7 +1,7 @@
 import Foundation
 import SwiftData
 
-final class IncomeRepository {
+final class IncomeRepository: IncomeRepositoryProtocol {
     private let context: ModelContext
 
     init(context: ModelContext) {
@@ -33,6 +33,9 @@ final class IncomeRepository {
 
     func deleteIncome(id: UUID) throws {
         if let existing = try incomeModel(id: id) {
+            let overrides = try context.fetch(FetchDescriptor<IncomeOverrideModel>())
+                .filter { $0.incomeId == id }
+            overrides.forEach { context.delete($0) }
             context.delete(existing)
             try context.save()
         }
