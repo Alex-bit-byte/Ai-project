@@ -1,0 +1,810 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		111111111111111111111111 /* FamilyBudgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111111111111111111111112 /* FamilyBudgetApp.swift */; };
+		111111111111111111111113 /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111111111111111111111114 /* AppRootView.swift */; };
+		111111111111111111111115 /* FoundationSmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111111111111111111111116 /* FoundationSmokeTests.swift */; };
+		222222222222222222222101 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222222222222222222222201 /* Money.swift */; };
+		222222222222222222222102 /* YearMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222222222222222222222202 /* YearMonth.swift */; };
+		222222222222222222222103 /* FamilyMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222222222222222222222203 /* FamilyMember.swift */; };
+		222222222222222222222108 /* FamilyMemberNameValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222222222222222222222208 /* FamilyMemberNameValidator.swift */; };
+		222222222222222222222104 /* Income.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222222222222222222222204 /* Income.swift */; };
+		222222222222222222222105 /* Credit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222222222222222222222205 /* Credit.swift */; };
+		222222222222222222222106 /* BudgetCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222222222222222222222206 /* BudgetCalculator.swift */; };
+		222222222222222222222107 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222222222222222222222207 /* AppSettings.swift */; };
+		444444444444444444444101 /* AppSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444444444444444444444201 /* AppSettingsModel.swift */; };
+		444444444444444444444102 /* FamilyMemberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444444444444444444444202 /* FamilyMemberModel.swift */; };
+		444444444444444444444103 /* IncomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444444444444444444444203 /* IncomeModel.swift */; };
+		444444444444444444444104 /* IncomeOverrideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444444444444444444444204 /* IncomeOverrideModel.swift */; };
+		444444444444444444444105 /* CreditModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444444444444444444444205 /* CreditModel.swift */; };
+		444444444444444444444106 /* CreditPaymentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444444444444444444444206 /* CreditPaymentModel.swift */; };
+		444444444444444444444107 /* PersistenceMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444444444444444444444207 /* PersistenceMapper.swift */; };
+		444444444444444444444108 /* PersistenceContainerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444444444444444444444208 /* PersistenceContainerFactory.swift */; };
+		444444444444444444444109 /* AppSettingsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444444444444444444444209 /* AppSettingsRepository.swift */; };
+		44444444444444444444410A /* FamilyMemberRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44444444444444444444420A /* FamilyMemberRepository.swift */; };
+		44444444444444444444410B /* IncomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44444444444444444444420B /* IncomeRepository.swift */; };
+		44444444444444444444410C /* CreditRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44444444444444444444420C /* CreditRepository.swift */; };
+		44444444444444444444410D /* MoneyRecordStatusRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44444444444444444444420D /* MoneyRecordStatusRepository.swift */; };
+		44444444444444444444410E /* FamilyMemberRelatedDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44444444444444444444420E /* FamilyMemberRelatedDataRepository.swift */; };
+		666666666666666666666101 /* SettingsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666666666666666666666201 /* SettingsUseCase.swift */; };
+		666666666666666666666102 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666666666666666666666202 /* SettingsViewModel.swift */; };
+		666666666666666666666103 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666666666666666666666203 /* SettingsView.swift */; };
+		666666666666666666666104 /* FamilyMemberUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666666666666666666666204 /* FamilyMemberUseCase.swift */; };
+		666666666666666666666105 /* FamilyMembersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666666666666666666666205 /* FamilyMembersViewModel.swift */; };
+		666666666666666666666106 /* FamilyMembersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666666666666666666666206 /* FamilyMembersView.swift */; };
+		333333333333333333333101 /* MoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333333333333333333333201 /* MoneyTests.swift */; };
+		333333333333333333333102 /* YearMonthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333333333333333333333202 /* YearMonthTests.swift */; };
+		333333333333333333333103 /* IncomeCalculationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333333333333333333333203 /* IncomeCalculationTests.swift */; };
+		333333333333333333333104 /* CreditCalculationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333333333333333333333204 /* CreditCalculationTests.swift */; };
+		333333333333333333333105 /* BudgetCalculationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333333333333333333333205 /* BudgetCalculationTests.swift */; };
+		555555555555555555555101 /* PersistenceMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555555555555555555555201 /* PersistenceMapperTests.swift */; };
+		555555555555555555555102 /* RepositoryPersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555555555555555555555202 /* RepositoryPersistenceTests.swift */; };
+		777777777777777777777101 /* SettingsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777777777777777777777201 /* SettingsUseCaseTests.swift */; };
+		777777777777777777777102 /* SettingsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777777777777777777777202 /* SettingsViewModelTests.swift */; };
+		777777777777777777777103 /* FamilyMemberNameValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777777777777777777777203 /* FamilyMemberNameValidatorTests.swift */; };
+		777777777777777777777104 /* FamilyMemberUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777777777777777777777204 /* FamilyMemberUseCaseTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		111111111111111111111117 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 111111111111111111111118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 111111111111111111111119;
+			remoteInfo = FamilyBudget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11111111111111111111111A /* FamilyBudget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamilyBudget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11111111111111111111111B /* FamilyBudgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FamilyBudgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		111111111111111111111112 /* FamilyBudgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyBudgetApp.swift; sourceTree = "<group>"; };
+		111111111111111111111114 /* AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootView.swift; sourceTree = "<group>"; };
+		111111111111111111111116 /* FoundationSmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationSmokeTests.swift; sourceTree = "<group>"; };
+		222222222222222222222201 /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		222222222222222222222202 /* YearMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearMonth.swift; sourceTree = "<group>"; };
+		222222222222222222222203 /* FamilyMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMember.swift; sourceTree = "<group>"; };
+		222222222222222222222208 /* FamilyMemberNameValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMemberNameValidator.swift; sourceTree = "<group>"; };
+		222222222222222222222204 /* Income.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Income.swift; sourceTree = "<group>"; };
+		222222222222222222222205 /* Credit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credit.swift; sourceTree = "<group>"; };
+		222222222222222222222206 /* BudgetCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCalculator.swift; sourceTree = "<group>"; };
+		222222222222222222222207 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		444444444444444444444201 /* AppSettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsModel.swift; sourceTree = "<group>"; };
+		444444444444444444444202 /* FamilyMemberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMemberModel.swift; sourceTree = "<group>"; };
+		444444444444444444444203 /* IncomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeModel.swift; sourceTree = "<group>"; };
+		444444444444444444444204 /* IncomeOverrideModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeOverrideModel.swift; sourceTree = "<group>"; };
+		444444444444444444444205 /* CreditModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditModel.swift; sourceTree = "<group>"; };
+		444444444444444444444206 /* CreditPaymentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditPaymentModel.swift; sourceTree = "<group>"; };
+		444444444444444444444207 /* PersistenceMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceMapper.swift; sourceTree = "<group>"; };
+		444444444444444444444208 /* PersistenceContainerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceContainerFactory.swift; sourceTree = "<group>"; };
+		444444444444444444444209 /* AppSettingsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsRepository.swift; sourceTree = "<group>"; };
+		44444444444444444444420A /* FamilyMemberRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMemberRepository.swift; sourceTree = "<group>"; };
+		44444444444444444444420B /* IncomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeRepository.swift; sourceTree = "<group>"; };
+		44444444444444444444420C /* CreditRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditRepository.swift; sourceTree = "<group>"; };
+		44444444444444444444420D /* MoneyRecordStatusRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyRecordStatusRepository.swift; sourceTree = "<group>"; };
+		44444444444444444444420E /* FamilyMemberRelatedDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMemberRelatedDataRepository.swift; sourceTree = "<group>"; };
+		666666666666666666666201 /* SettingsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUseCase.swift; sourceTree = "<group>"; };
+		666666666666666666666202 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		666666666666666666666203 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		666666666666666666666204 /* FamilyMemberUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMemberUseCase.swift; sourceTree = "<group>"; };
+		666666666666666666666205 /* FamilyMembersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMembersViewModel.swift; sourceTree = "<group>"; };
+		666666666666666666666206 /* FamilyMembersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMembersView.swift; sourceTree = "<group>"; };
+		333333333333333333333201 /* MoneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTests.swift; sourceTree = "<group>"; };
+		333333333333333333333202 /* YearMonthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearMonthTests.swift; sourceTree = "<group>"; };
+		333333333333333333333203 /* IncomeCalculationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeCalculationTests.swift; sourceTree = "<group>"; };
+		333333333333333333333204 /* CreditCalculationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCalculationTests.swift; sourceTree = "<group>"; };
+		333333333333333333333205 /* BudgetCalculationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCalculationTests.swift; sourceTree = "<group>"; };
+		555555555555555555555201 /* PersistenceMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceMapperTests.swift; sourceTree = "<group>"; };
+		555555555555555555555202 /* RepositoryPersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryPersistenceTests.swift; sourceTree = "<group>"; };
+		777777777777777777777201 /* SettingsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUseCaseTests.swift; sourceTree = "<group>"; };
+		777777777777777777777202 /* SettingsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModelTests.swift; sourceTree = "<group>"; };
+		777777777777777777777203 /* FamilyMemberNameValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMemberNameValidatorTests.swift; sourceTree = "<group>"; };
+		777777777777777777777204 /* FamilyMemberUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMemberUseCaseTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11111111111111111111111C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11111111111111111111111D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11111111111111111111111E = {
+			isa = PBXGroup;
+			children = (
+				11111111111111111111111F /* FamilyBudget */,
+				111111111111111111111120 /* FamilyBudgetTests */,
+				111111111111111111111121 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		111111111111111111111121 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11111111111111111111111A /* FamilyBudget.app */,
+				11111111111111111111111B /* FamilyBudgetTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11111111111111111111111F /* FamilyBudget */ = {
+			isa = PBXGroup;
+			children = (
+				111111111111111111111122 /* App */,
+				111111111111111111111123 /* Domain */,
+				111111111111111111111124 /* Application */,
+				111111111111111111111125 /* Data */,
+				111111111111111111111126 /* Presentation */,
+			);
+			path = FamilyBudget;
+			sourceTree = "<group>";
+		};
+		111111111111111111111122 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				111111111111111111111112 /* FamilyBudgetApp.swift */,
+				111111111111111111111114 /* AppRootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		111111111111111111111123 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				222222222222222222222301 /* ValueObjects */,
+				222222222222222222222302 /* FamilyMembers */,
+				222222222222222222222303 /* Income */,
+				222222222222222222222304 /* Credits */,
+				222222222222222222222305 /* BudgetCalculations */,
+				222222222222222222222306 /* Settings */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		111111111111111111111124 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				666666666666666666666301 /* Settings */,
+				666666666666666666666303 /* FamilyMembers */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		111111111111111111111125 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				444444444444444444444301 /* SwiftDataModels */,
+				444444444444444444444302 /* Mappers */,
+				444444444444444444444303 /* Repositories */,
+				444444444444444444444304 /* Persistence */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		111111111111111111111126 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				666666666666666666666302 /* Settings */,
+				666666666666666666666304 /* FamilyMembers */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		111111111111111111111120 /* FamilyBudgetTests */ = {
+			isa = PBXGroup;
+			children = (
+				111111111111111111111116 /* FoundationSmokeTests.swift */,
+				333333333333333333333301 /* Domain */,
+				555555555555555555555301 /* Data */,
+				777777777777777777777301 /* Application */,
+				777777777777777777777303 /* Presentation */,
+			);
+			path = FamilyBudgetTests;
+			sourceTree = "<group>";
+		};
+		222222222222222222222301 /* ValueObjects */ = {
+			isa = PBXGroup;
+			children = (
+				222222222222222222222201 /* Money.swift */,
+				222222222222222222222202 /* YearMonth.swift */,
+			);
+			path = ValueObjects;
+			sourceTree = "<group>";
+		};
+		222222222222222222222302 /* FamilyMembers */ = {
+			isa = PBXGroup;
+			children = (
+				222222222222222222222203 /* FamilyMember.swift */,
+				222222222222222222222208 /* FamilyMemberNameValidator.swift */,
+			);
+			path = FamilyMembers;
+			sourceTree = "<group>";
+		};
+		222222222222222222222303 /* Income */ = {
+			isa = PBXGroup;
+			children = (
+				222222222222222222222204 /* Income.swift */,
+			);
+			path = Income;
+			sourceTree = "<group>";
+		};
+		222222222222222222222304 /* Credits */ = {
+			isa = PBXGroup;
+			children = (
+				222222222222222222222205 /* Credit.swift */,
+			);
+			path = Credits;
+			sourceTree = "<group>";
+		};
+		222222222222222222222305 /* BudgetCalculations */ = {
+			isa = PBXGroup;
+			children = (
+				222222222222222222222206 /* BudgetCalculator.swift */,
+			);
+			path = BudgetCalculations;
+			sourceTree = "<group>";
+		};
+		222222222222222222222306 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				222222222222222222222207 /* AppSettings.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		444444444444444444444301 /* SwiftDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				444444444444444444444201 /* AppSettingsModel.swift */,
+				444444444444444444444202 /* FamilyMemberModel.swift */,
+				444444444444444444444203 /* IncomeModel.swift */,
+				444444444444444444444204 /* IncomeOverrideModel.swift */,
+				444444444444444444444205 /* CreditModel.swift */,
+				444444444444444444444206 /* CreditPaymentModel.swift */,
+			);
+			path = SwiftDataModels;
+			sourceTree = "<group>";
+		};
+		444444444444444444444302 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				444444444444444444444207 /* PersistenceMapper.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		444444444444444444444303 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				444444444444444444444209 /* AppSettingsRepository.swift */,
+				44444444444444444444420A /* FamilyMemberRepository.swift */,
+				44444444444444444444420B /* IncomeRepository.swift */,
+				44444444444444444444420C /* CreditRepository.swift */,
+				44444444444444444444420D /* MoneyRecordStatusRepository.swift */,
+				44444444444444444444420E /* FamilyMemberRelatedDataRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		444444444444444444444304 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				444444444444444444444208 /* PersistenceContainerFactory.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		333333333333333333333301 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				333333333333333333333201 /* MoneyTests.swift */,
+				333333333333333333333202 /* YearMonthTests.swift */,
+				333333333333333333333203 /* IncomeCalculationTests.swift */,
+				333333333333333333333204 /* CreditCalculationTests.swift */,
+				333333333333333333333205 /* BudgetCalculationTests.swift */,
+				777777777777777777777203 /* FamilyMemberNameValidatorTests.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		555555555555555555555301 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				555555555555555555555201 /* PersistenceMapperTests.swift */,
+				555555555555555555555202 /* RepositoryPersistenceTests.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		666666666666666666666301 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				666666666666666666666201 /* SettingsUseCase.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		666666666666666666666302 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				666666666666666666666202 /* SettingsViewModel.swift */,
+				666666666666666666666203 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		777777777777777777777301 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				777777777777777777777302 /* Settings */,
+				777777777777777777777305 /* FamilyMembers */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		777777777777777777777302 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				777777777777777777777201 /* SettingsUseCaseTests.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		777777777777777777777303 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				777777777777777777777304 /* Settings */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		777777777777777777777304 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				777777777777777777777202 /* SettingsViewModelTests.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		666666666666666666666303 /* FamilyMembers */ = {
+			isa = PBXGroup;
+			children = (
+				666666666666666666666204 /* FamilyMemberUseCase.swift */,
+			);
+			path = FamilyMembers;
+			sourceTree = "<group>";
+		};
+		666666666666666666666304 /* FamilyMembers */ = {
+			isa = PBXGroup;
+			children = (
+				666666666666666666666205 /* FamilyMembersViewModel.swift */,
+				666666666666666666666206 /* FamilyMembersView.swift */,
+			);
+			path = FamilyMembers;
+			sourceTree = "<group>";
+		};
+		777777777777777777777305 /* FamilyMembers */ = {
+			isa = PBXGroup;
+			children = (
+				777777777777777777777204 /* FamilyMemberUseCaseTests.swift */,
+			);
+			path = FamilyMembers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		111111111111111111111119 /* FamilyBudget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 111111111111111111111127 /* Build configuration list for PBXNativeTarget "FamilyBudget" */;
+			buildPhases = (
+				111111111111111111111128 /* Sources */,
+				11111111111111111111111C /* Frameworks */,
+				111111111111111111111129 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FamilyBudget;
+			productName = FamilyBudget;
+			productReference = 11111111111111111111111A /* FamilyBudget.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11111111111111111111112A /* FamilyBudgetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11111111111111111111112B /* Build configuration list for PBXNativeTarget "FamilyBudgetTests" */;
+			buildPhases = (
+				11111111111111111111112C /* Sources */,
+				11111111111111111111111D /* Frameworks */,
+				11111111111111111111112D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11111111111111111111112E /* PBXTargetDependency */,
+			);
+			name = FamilyBudgetTests;
+			productName = FamilyBudgetTests;
+			productReference = 11111111111111111111111B /* FamilyBudgetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		111111111111111111111118 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					111111111111111111111119 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					11111111111111111111112A = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 111111111111111111111119;
+					};
+				};
+			};
+			buildConfigurationList = 11111111111111111111112F /* Build configuration list for PBXProject "FamilyBudget" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11111111111111111111111E;
+			productRefGroup = 111111111111111111111121 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				111111111111111111111119 /* FamilyBudget */,
+				11111111111111111111112A /* FamilyBudgetTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		111111111111111111111129 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11111111111111111111112D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		111111111111111111111128 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				111111111111111111111111 /* FamilyBudgetApp.swift in Sources */,
+				111111111111111111111113 /* AppRootView.swift in Sources */,
+				222222222222222222222101 /* Money.swift in Sources */,
+				222222222222222222222102 /* YearMonth.swift in Sources */,
+				222222222222222222222103 /* FamilyMember.swift in Sources */,
+				222222222222222222222108 /* FamilyMemberNameValidator.swift in Sources */,
+				222222222222222222222104 /* Income.swift in Sources */,
+				222222222222222222222105 /* Credit.swift in Sources */,
+				222222222222222222222106 /* BudgetCalculator.swift in Sources */,
+				222222222222222222222107 /* AppSettings.swift in Sources */,
+				444444444444444444444101 /* AppSettingsModel.swift in Sources */,
+				444444444444444444444102 /* FamilyMemberModel.swift in Sources */,
+				444444444444444444444103 /* IncomeModel.swift in Sources */,
+				444444444444444444444104 /* IncomeOverrideModel.swift in Sources */,
+				444444444444444444444105 /* CreditModel.swift in Sources */,
+				444444444444444444444106 /* CreditPaymentModel.swift in Sources */,
+				444444444444444444444107 /* PersistenceMapper.swift in Sources */,
+				444444444444444444444108 /* PersistenceContainerFactory.swift in Sources */,
+				444444444444444444444109 /* AppSettingsRepository.swift in Sources */,
+				44444444444444444444410A /* FamilyMemberRepository.swift in Sources */,
+				44444444444444444444410B /* IncomeRepository.swift in Sources */,
+				44444444444444444444410C /* CreditRepository.swift in Sources */,
+				44444444444444444444410D /* MoneyRecordStatusRepository.swift in Sources */,
+				44444444444444444444410E /* FamilyMemberRelatedDataRepository.swift in Sources */,
+				666666666666666666666101 /* SettingsUseCase.swift in Sources */,
+				666666666666666666666102 /* SettingsViewModel.swift in Sources */,
+				666666666666666666666103 /* SettingsView.swift in Sources */,
+				666666666666666666666104 /* FamilyMemberUseCase.swift in Sources */,
+				666666666666666666666105 /* FamilyMembersViewModel.swift in Sources */,
+				666666666666666666666106 /* FamilyMembersView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11111111111111111111112C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				111111111111111111111115 /* FoundationSmokeTests.swift in Sources */,
+				333333333333333333333101 /* MoneyTests.swift in Sources */,
+				333333333333333333333102 /* YearMonthTests.swift in Sources */,
+				333333333333333333333103 /* IncomeCalculationTests.swift in Sources */,
+				333333333333333333333104 /* CreditCalculationTests.swift in Sources */,
+				333333333333333333333105 /* BudgetCalculationTests.swift in Sources */,
+				555555555555555555555101 /* PersistenceMapperTests.swift in Sources */,
+				555555555555555555555102 /* RepositoryPersistenceTests.swift in Sources */,
+				777777777777777777777101 /* SettingsUseCaseTests.swift in Sources */,
+				777777777777777777777102 /* SettingsViewModelTests.swift in Sources */,
+				777777777777777777777103 /* FamilyMemberNameValidatorTests.swift in Sources */,
+				777777777777777777777104 /* FamilyMemberUseCaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11111111111111111111112E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 111111111111111111111119 /* FamilyBudget */;
+			targetProxy = 111111111111111111111117 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		111111111111111111111130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		111111111111111111111131 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		111111111111111111111132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.familybudget.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		111111111111111111111133 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.familybudget.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		111111111111111111111134 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.familybudget.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FamilyBudget.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FamilyBudget";
+			};
+			name = Debug;
+		};
+		111111111111111111111135 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.familybudget.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FamilyBudget.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FamilyBudget";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11111111111111111111112F /* Build configuration list for PBXProject "FamilyBudget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				111111111111111111111130 /* Debug */,
+				111111111111111111111131 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		111111111111111111111127 /* Build configuration list for PBXNativeTarget "FamilyBudget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				111111111111111111111132 /* Debug */,
+				111111111111111111111133 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11111111111111111111112B /* Build configuration list for PBXNativeTarget "FamilyBudgetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				111111111111111111111134 /* Debug */,
+				111111111111111111111135 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 111111111111111111111118 /* Project object */;
+}

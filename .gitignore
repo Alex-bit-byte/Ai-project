@@ -1,0 +1,34 @@
+# macOS
+.DS_Store
+
+# Xcode user state
+*.xcuserstate
+*.xcscmblueprint
+xcuserdata/
+
+# Build products
+build/
+DerivedData/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Fastlane / test output
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output/
+test_output/
+
+# Local environment files
+.env
+.env.*
+!.env.example
