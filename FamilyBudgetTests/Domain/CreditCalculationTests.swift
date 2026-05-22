@@ -39,6 +39,48 @@ final class CreditCalculationTests: XCTestCase {
         )
     }
 
+    func testCalculatedMonthlyPaymentUsesSimpleFormula() throws {
+        let payment = try BudgetCalculator.calculatedMonthlyPayment(
+            totalAmount: Money(amount: 1_000, currencyCode: "USD"),
+            downPayment: Money(amount: 100, currencyCode: "USD"),
+            termMonths: 3
+        )
+
+        XCTAssertEqual(payment, Money(amount: 300, currencyCode: "USD"))
+    }
+
+    func testCreditRejectsNegativeAmountsAndDownPaymentAboveTotal() throws {
+        XCTAssertThrowsError(
+            try Credit(
+                memberId: UUID(),
+                title: "Invalid",
+                totalAmount: Money(amount: -1_000, currencyCode: "USD"),
+                downPayment: Money(amount: 0, currencyCode: "USD"),
+                monthlyPayment: Money(amount: 100, currencyCode: "USD"),
+                termMonths: 1,
+                startMonth: try YearMonth(year: 2026, month: 1),
+                paymentDay: 10
+            )
+        ) { error in
+            XCTAssertEqual(error as? DomainValidationError, .negativeMoneyAmount)
+        }
+
+        XCTAssertThrowsError(
+            try Credit(
+                memberId: UUID(),
+                title: "Invalid",
+                totalAmount: Money(amount: 1_000, currencyCode: "USD"),
+                downPayment: Money(amount: 1_200, currencyCode: "USD"),
+                monthlyPayment: Money(amount: 100, currencyCode: "USD"),
+                termMonths: 1,
+                startMonth: try YearMonth(year: 2026, month: 1),
+                paymentDay: 10
+            )
+        ) { error in
+            XCTAssertEqual(error as? DomainValidationError, .downPaymentExceedsTotalAmount)
+        }
+    }
+
     func testPaymentOverdueDetection() throws {
         let payment = CreditPayment(
             creditId: UUID(),

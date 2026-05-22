@@ -6,6 +6,15 @@ enum CreditLoadPercentage: Equatable {
 }
 
 enum BudgetCalculator {
+    static func calculatedMonthlyPayment(totalAmount: Money, downPayment: Money, termMonths: Int) throws -> Money {
+        guard termMonths > 0 else {
+            throw DomainValidationError.invalidTermMonths
+        }
+
+        let principal = try totalAmount.subtracting(downPayment)
+        return Money(amount: principal.amount / Decimal(termMonths), currencyCode: totalAmount.currencyCode)
+    }
+
     static func incomeAmount(
         for income: Income,
         in month: YearMonth,

@@ -1,7 +1,7 @@
 import Foundation
 import SwiftData
 
-final class CreditRepository {
+final class CreditRepository: CreditRepositoryProtocol {
     private let context: ModelContext
 
     init(context: ModelContext) {
@@ -33,6 +33,9 @@ final class CreditRepository {
 
     func deleteCredit(id: UUID) throws {
         if let existing = try creditModel(id: id) {
+            let payments = try context.fetch(FetchDescriptor<CreditPaymentModel>())
+                .filter { $0.creditId == id }
+            payments.forEach { context.delete($0) }
             context.delete(existing)
             try context.save()
         }

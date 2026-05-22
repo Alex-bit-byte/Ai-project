@@ -1,6 +1,6 @@
 import Foundation
 
-enum PaymentStatus: Equatable {
+enum PaymentStatus: Equatable, Hashable {
     case scheduled
     case paid
     case skipped
@@ -41,6 +41,14 @@ struct Credit: Equatable, Identifiable {
 
         guard (1...31).contains(paymentDay) else {
             throw DomainValidationError.invalidPaymentDay
+        }
+
+        guard totalAmount.amount >= 0, downPayment.amount >= 0, monthlyPayment.amount >= 0 else {
+            throw DomainValidationError.negativeMoneyAmount
+        }
+
+        guard downPayment.amount <= totalAmount.amount else {
+            throw DomainValidationError.downPaymentExceedsTotalAmount
         }
 
         _ = try totalAmount.subtracting(downPayment)

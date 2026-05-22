@@ -41,6 +41,9 @@
 		888888888888888888888101 /* IncomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888888888888888888888201 /* IncomeUseCase.swift */; };
 		888888888888888888888102 /* IncomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888888888888888888888202 /* IncomeViewModel.swift */; };
 		888888888888888888888103 /* IncomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888888888888888888888203 /* IncomeView.swift */; };
+		999999999999999999999101 /* CreditUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999999999999999999999201 /* CreditUseCase.swift */; };
+		999999999999999999999102 /* CreditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999999999999999999999202 /* CreditViewModel.swift */; };
+		999999999999999999999103 /* CreditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999999999999999999999203 /* CreditView.swift */; };
 		333333333333333333333101 /* MoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333333333333333333333201 /* MoneyTests.swift */; };
 		333333333333333333333102 /* YearMonthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333333333333333333333202 /* YearMonthTests.swift */; };
 		333333333333333333333103 /* IncomeCalculationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333333333333333333333203 /* IncomeCalculationTests.swift */; };
@@ -53,6 +56,7 @@
 		777777777777777777777103 /* FamilyMemberNameValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777777777777777777777203 /* FamilyMemberNameValidatorTests.swift */; };
 		777777777777777777777104 /* FamilyMemberUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777777777777777777777204 /* FamilyMemberUseCaseTests.swift */; };
 		888888888888888888888104 /* IncomeUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888888888888888888888204 /* IncomeUseCaseTests.swift */; };
+		999999999999999999999104 /* CreditUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999999999999999999999204 /* CreditUseCaseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +106,9 @@
 		888888888888888888888201 /* IncomeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeUseCase.swift; sourceTree = "<group>"; };
 		888888888888888888888202 /* IncomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeViewModel.swift; sourceTree = "<group>"; };
 		888888888888888888888203 /* IncomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeView.swift; sourceTree = "<group>"; };
+		999999999999999999999201 /* CreditUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditUseCase.swift; sourceTree = "<group>"; };
+		999999999999999999999202 /* CreditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditViewModel.swift; sourceTree = "<group>"; };
+		999999999999999999999203 /* CreditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditView.swift; sourceTree = "<group>"; };
 		333333333333333333333201 /* MoneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTests.swift; sourceTree = "<group>"; };
 		333333333333333333333202 /* YearMonthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearMonthTests.swift; sourceTree = "<group>"; };
 		333333333333333333333203 /* IncomeCalculationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeCalculationTests.swift; sourceTree = "<group>"; };
@@ -114,6 +121,7 @@
 		777777777777777777777203 /* FamilyMemberNameValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMemberNameValidatorTests.swift; sourceTree = "<group>"; };
 		777777777777777777777204 /* FamilyMemberUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMemberUseCaseTests.swift; sourceTree = "<group>"; };
 		888888888888888888888204 /* IncomeUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeUseCaseTests.swift; sourceTree = "<group>"; };
+		999999999999999999999204 /* CreditUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditUseCaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +200,7 @@
 				666666666666666666666301 /* Settings */,
 				666666666666666666666303 /* FamilyMembers */,
 				888888888888888888888301 /* Income */,
+				999999999999999999999301 /* Credits */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -213,6 +222,7 @@
 				666666666666666666666302 /* Settings */,
 				666666666666666666666304 /* FamilyMembers */,
 				888888888888888888888302 /* Income */,
+				999999999999999999999302 /* Credits */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -366,6 +376,7 @@
 				777777777777777777777302 /* Settings */,
 				777777777777777777777305 /* FamilyMembers */,
 				888888888888888888888303 /* Income */,
+				999999999999999999999303 /* Credits */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -442,6 +453,31 @@
 				888888888888888888888204 /* IncomeUseCaseTests.swift */,
 			);
 			path = Income;
+			sourceTree = "<group>";
+		};
+		999999999999999999999301 /* Credits */ = {
+			isa = PBXGroup;
+			children = (
+				999999999999999999999201 /* CreditUseCase.swift */,
+			);
+			path = Credits;
+			sourceTree = "<group>";
+		};
+		999999999999999999999302 /* Credits */ = {
+			isa = PBXGroup;
+			children = (
+				999999999999999999999202 /* CreditViewModel.swift */,
+				999999999999999999999203 /* CreditView.swift */,
+			);
+			path = Credits;
+			sourceTree = "<group>";
+		};
+		999999999999999999999303 /* Credits */ = {
+			isa = PBXGroup;
+			children = (
+				999999999999999999999204 /* CreditUseCaseTests.swift */,
+			);
+			path = Credits;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -575,6 +611,9 @@
 				888888888888888888888101 /* IncomeUseCase.swift in Sources */,
 				888888888888888888888102 /* IncomeViewModel.swift in Sources */,
 				888888888888888888888103 /* IncomeView.swift in Sources */,
+				999999999999999999999101 /* CreditUseCase.swift in Sources */,
+				999999999999999999999102 /* CreditViewModel.swift in Sources */,
+				999999999999999999999103 /* CreditView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,6 +634,7 @@
 				777777777777777777777103 /* FamilyMemberNameValidatorTests.swift in Sources */,
 				777777777777777777777104 /* FamilyMemberUseCaseTests.swift in Sources */,
 				888888888888888888888104 /* IncomeUseCaseTests.swift in Sources */,
+				999999999999999999999104 /* CreditUseCaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -95,4 +95,6 @@ enum DomainValidationError: Error, Equatable {
     case endMonthBeforeStartMonth
     case invalidTermMonths
     case invalidPaymentDay
+    case negativeMoneyAmount
+    case downPaymentExceedsTotalAmount
 }

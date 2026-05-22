@@ -1,7 +1,7 @@
 # Задача: кредиты и рассрочки
 
 Дата: 2026-05-11  
-Статус: draft for human review  
+Статус: implemented, ожидает XCTest в полном Xcode
 Spec: `docs/specs/features/credits-installments.md`  
 Зависит от:
 

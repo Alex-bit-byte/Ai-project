@@ -20,6 +20,11 @@ struct AppRootView: View {
             .navigationTitle("Семейный бюджет")
             .toolbar {
                 NavigationLink {
+                    CreditView(viewModel: CreditViewModel(), useCase: makeCreditUseCase())
+                } label: {
+                    Image(systemName: "creditcard")
+                }
+                NavigationLink {
                     IncomeView(viewModel: IncomeViewModel(), useCase: makeIncomeUseCase())
                 } label: {
                     Image(systemName: "banknote")
@@ -55,6 +60,13 @@ struct AppRootView: View {
     private func makeIncomeUseCase() -> IncomeUseCase {
         IncomeUseCase(
             incomeRepository: IncomeRepository(context: modelContext),
+            memberRepository: FamilyMemberRepository(context: modelContext)
+        )
+    }
+
+    private func makeCreditUseCase() -> CreditUseCase {
+        CreditUseCase(
+            creditRepository: CreditRepository(context: modelContext),
             memberRepository: FamilyMemberRepository(context: modelContext)
         )
     }
