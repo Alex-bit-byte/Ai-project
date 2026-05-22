@@ -13,11 +13,16 @@
 		222222222222222222222101 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222222222222222222222201 /* Money.swift */; };
 		222222222222222222222102 /* YearMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222222222222222222222202 /* YearMonth.swift */; };
 		222222222222222222222103 /* FamilyMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222222222222222222222203 /* FamilyMember.swift */; };
-		222222222222222222222108 /* FamilyMemberNameValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222222222222222222222208 /* FamilyMemberNameValidator.swift */; };
 		222222222222222222222104 /* Income.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222222222222222222222204 /* Income.swift */; };
 		222222222222222222222105 /* Credit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222222222222222222222205 /* Credit.swift */; };
 		222222222222222222222106 /* BudgetCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222222222222222222222206 /* BudgetCalculator.swift */; };
 		222222222222222222222107 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222222222222222222222207 /* AppSettings.swift */; };
+		222222222222222222222108 /* FamilyMemberNameValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222222222222222222222208 /* FamilyMemberNameValidator.swift */; };
+		333333333333333333333101 /* MoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333333333333333333333201 /* MoneyTests.swift */; };
+		333333333333333333333102 /* YearMonthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333333333333333333333202 /* YearMonthTests.swift */; };
+		333333333333333333333103 /* IncomeCalculationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333333333333333333333203 /* IncomeCalculationTests.swift */; };
+		333333333333333333333104 /* CreditCalculationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333333333333333333333204 /* CreditCalculationTests.swift */; };
+		333333333333333333333105 /* BudgetCalculationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333333333333333333333205 /* BudgetCalculationTests.swift */; };
 		444444444444444444444101 /* AppSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444444444444444444444201 /* AppSettingsModel.swift */; };
 		444444444444444444444102 /* FamilyMemberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444444444444444444444202 /* FamilyMemberModel.swift */; };
 		444444444444444444444103 /* IncomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444444444444444444444203 /* IncomeModel.swift */; };
@@ -32,31 +37,29 @@
 		44444444444444444444410C /* CreditRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44444444444444444444420C /* CreditRepository.swift */; };
 		44444444444444444444410D /* MoneyRecordStatusRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44444444444444444444420D /* MoneyRecordStatusRepository.swift */; };
 		44444444444444444444410E /* FamilyMemberRelatedDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44444444444444444444420E /* FamilyMemberRelatedDataRepository.swift */; };
+		555555555555555555555101 /* PersistenceMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555555555555555555555201 /* PersistenceMapperTests.swift */; };
+		555555555555555555555102 /* RepositoryPersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555555555555555555555202 /* RepositoryPersistenceTests.swift */; };
 		666666666666666666666101 /* SettingsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666666666666666666666201 /* SettingsUseCase.swift */; };
 		666666666666666666666102 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666666666666666666666202 /* SettingsViewModel.swift */; };
 		666666666666666666666103 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666666666666666666666203 /* SettingsView.swift */; };
 		666666666666666666666104 /* FamilyMemberUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666666666666666666666204 /* FamilyMemberUseCase.swift */; };
 		666666666666666666666105 /* FamilyMembersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666666666666666666666205 /* FamilyMembersViewModel.swift */; };
 		666666666666666666666106 /* FamilyMembersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666666666666666666666206 /* FamilyMembersView.swift */; };
-		888888888888888888888101 /* IncomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888888888888888888888201 /* IncomeUseCase.swift */; };
-		888888888888888888888102 /* IncomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888888888888888888888202 /* IncomeViewModel.swift */; };
-		888888888888888888888103 /* IncomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888888888888888888888203 /* IncomeView.swift */; };
-		999999999999999999999101 /* CreditUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999999999999999999999201 /* CreditUseCase.swift */; };
-		999999999999999999999102 /* CreditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999999999999999999999202 /* CreditViewModel.swift */; };
-		999999999999999999999103 /* CreditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999999999999999999999203 /* CreditView.swift */; };
-		333333333333333333333101 /* MoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333333333333333333333201 /* MoneyTests.swift */; };
-		333333333333333333333102 /* YearMonthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333333333333333333333202 /* YearMonthTests.swift */; };
-		333333333333333333333103 /* IncomeCalculationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333333333333333333333203 /* IncomeCalculationTests.swift */; };
-		333333333333333333333104 /* CreditCalculationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333333333333333333333204 /* CreditCalculationTests.swift */; };
-		333333333333333333333105 /* BudgetCalculationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333333333333333333333205 /* BudgetCalculationTests.swift */; };
-		555555555555555555555101 /* PersistenceMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555555555555555555555201 /* PersistenceMapperTests.swift */; };
-		555555555555555555555102 /* RepositoryPersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555555555555555555555202 /* RepositoryPersistenceTests.swift */; };
 		777777777777777777777101 /* SettingsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777777777777777777777201 /* SettingsUseCaseTests.swift */; };
 		777777777777777777777102 /* SettingsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777777777777777777777202 /* SettingsViewModelTests.swift */; };
 		777777777777777777777103 /* FamilyMemberNameValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777777777777777777777203 /* FamilyMemberNameValidatorTests.swift */; };
 		777777777777777777777104 /* FamilyMemberUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777777777777777777777204 /* FamilyMemberUseCaseTests.swift */; };
+		888888888888888888888101 /* IncomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888888888888888888888201 /* IncomeUseCase.swift */; };
+		888888888888888888888102 /* IncomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888888888888888888888202 /* IncomeViewModel.swift */; };
+		888888888888888888888103 /* IncomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888888888888888888888203 /* IncomeView.swift */; };
 		888888888888888888888104 /* IncomeUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888888888888888888888204 /* IncomeUseCaseTests.swift */; };
+		999999999999999999999101 /* CreditUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999999999999999999999201 /* CreditUseCase.swift */; };
+		999999999999999999999102 /* CreditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999999999999999999999202 /* CreditViewModel.swift */; };
+		999999999999999999999103 /* CreditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999999999999999999999203 /* CreditView.swift */; };
 		999999999999999999999104 /* CreditUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999999999999999999999204 /* CreditUseCaseTests.swift */; };
+		AAAAAAAAAAAAAAAAAAAAAA101 /* YearlyOverviewUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAAAAAAAAAAAAAAAAAAA201 /* YearlyOverviewUseCase.swift */; };
+		AAAAAAAAAAAAAAAAAAAAAA102 /* YearlyOverviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAAAAAAAAAAAAAAAAAAA202 /* YearlyOverviewViewModel.swift */; };
+		AAAAAAAAAAAAAAAAAAAAAA103 /* YearlyOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAAAAAAAAAAAAAAAAAAA203 /* YearlyOverviewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,19 +73,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		11111111111111111111111A /* FamilyBudget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamilyBudget.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		11111111111111111111111B /* FamilyBudgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FamilyBudgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		111111111111111111111112 /* FamilyBudgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyBudgetApp.swift; sourceTree = "<group>"; };
 		111111111111111111111114 /* AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootView.swift; sourceTree = "<group>"; };
 		111111111111111111111116 /* FoundationSmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationSmokeTests.swift; sourceTree = "<group>"; };
+		11111111111111111111111A /* FamilyBudget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamilyBudget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11111111111111111111111B /* FamilyBudgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FamilyBudgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		222222222222222222222201 /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 		222222222222222222222202 /* YearMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearMonth.swift; sourceTree = "<group>"; };
 		222222222222222222222203 /* FamilyMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMember.swift; sourceTree = "<group>"; };
-		222222222222222222222208 /* FamilyMemberNameValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMemberNameValidator.swift; sourceTree = "<group>"; };
 		222222222222222222222204 /* Income.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Income.swift; sourceTree = "<group>"; };
 		222222222222222222222205 /* Credit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credit.swift; sourceTree = "<group>"; };
 		222222222222222222222206 /* BudgetCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCalculator.swift; sourceTree = "<group>"; };
 		222222222222222222222207 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		222222222222222222222208 /* FamilyMemberNameValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMemberNameValidator.swift; sourceTree = "<group>"; };
+		333333333333333333333201 /* MoneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTests.swift; sourceTree = "<group>"; };
+		333333333333333333333202 /* YearMonthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearMonthTests.swift; sourceTree = "<group>"; };
+		333333333333333333333203 /* IncomeCalculationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeCalculationTests.swift; sourceTree = "<group>"; };
+		333333333333333333333204 /* CreditCalculationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCalculationTests.swift; sourceTree = "<group>"; };
+		333333333333333333333205 /* BudgetCalculationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCalculationTests.swift; sourceTree = "<group>"; };
 		444444444444444444444201 /* AppSettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsModel.swift; sourceTree = "<group>"; };
 		444444444444444444444202 /* FamilyMemberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMemberModel.swift; sourceTree = "<group>"; };
 		444444444444444444444203 /* IncomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeModel.swift; sourceTree = "<group>"; };
@@ -97,31 +105,29 @@
 		44444444444444444444420C /* CreditRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditRepository.swift; sourceTree = "<group>"; };
 		44444444444444444444420D /* MoneyRecordStatusRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyRecordStatusRepository.swift; sourceTree = "<group>"; };
 		44444444444444444444420E /* FamilyMemberRelatedDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMemberRelatedDataRepository.swift; sourceTree = "<group>"; };
+		555555555555555555555201 /* PersistenceMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceMapperTests.swift; sourceTree = "<group>"; };
+		555555555555555555555202 /* RepositoryPersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryPersistenceTests.swift; sourceTree = "<group>"; };
 		666666666666666666666201 /* SettingsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUseCase.swift; sourceTree = "<group>"; };
 		666666666666666666666202 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		666666666666666666666203 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		666666666666666666666204 /* FamilyMemberUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMemberUseCase.swift; sourceTree = "<group>"; };
 		666666666666666666666205 /* FamilyMembersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMembersViewModel.swift; sourceTree = "<group>"; };
 		666666666666666666666206 /* FamilyMembersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMembersView.swift; sourceTree = "<group>"; };
-		888888888888888888888201 /* IncomeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeUseCase.swift; sourceTree = "<group>"; };
-		888888888888888888888202 /* IncomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeViewModel.swift; sourceTree = "<group>"; };
-		888888888888888888888203 /* IncomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeView.swift; sourceTree = "<group>"; };
-		999999999999999999999201 /* CreditUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditUseCase.swift; sourceTree = "<group>"; };
-		999999999999999999999202 /* CreditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditViewModel.swift; sourceTree = "<group>"; };
-		999999999999999999999203 /* CreditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditView.swift; sourceTree = "<group>"; };
-		333333333333333333333201 /* MoneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTests.swift; sourceTree = "<group>"; };
-		333333333333333333333202 /* YearMonthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearMonthTests.swift; sourceTree = "<group>"; };
-		333333333333333333333203 /* IncomeCalculationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeCalculationTests.swift; sourceTree = "<group>"; };
-		333333333333333333333204 /* CreditCalculationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCalculationTests.swift; sourceTree = "<group>"; };
-		333333333333333333333205 /* BudgetCalculationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCalculationTests.swift; sourceTree = "<group>"; };
-		555555555555555555555201 /* PersistenceMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceMapperTests.swift; sourceTree = "<group>"; };
-		555555555555555555555202 /* RepositoryPersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryPersistenceTests.swift; sourceTree = "<group>"; };
 		777777777777777777777201 /* SettingsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUseCaseTests.swift; sourceTree = "<group>"; };
 		777777777777777777777202 /* SettingsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModelTests.swift; sourceTree = "<group>"; };
 		777777777777777777777203 /* FamilyMemberNameValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMemberNameValidatorTests.swift; sourceTree = "<group>"; };
 		777777777777777777777204 /* FamilyMemberUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMemberUseCaseTests.swift; sourceTree = "<group>"; };
+		888888888888888888888201 /* IncomeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeUseCase.swift; sourceTree = "<group>"; };
+		888888888888888888888202 /* IncomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeViewModel.swift; sourceTree = "<group>"; };
+		888888888888888888888203 /* IncomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeView.swift; sourceTree = "<group>"; };
 		888888888888888888888204 /* IncomeUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeUseCaseTests.swift; sourceTree = "<group>"; };
+		999999999999999999999201 /* CreditUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditUseCase.swift; sourceTree = "<group>"; };
+		999999999999999999999202 /* CreditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditViewModel.swift; sourceTree = "<group>"; };
+		999999999999999999999203 /* CreditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditView.swift; sourceTree = "<group>"; };
 		999999999999999999999204 /* CreditUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditUseCaseTests.swift; sourceTree = "<group>"; };
+		AAAAAAAAAAAAAAAAAAAAAA201 /* YearlyOverviewUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearlyOverviewUseCase.swift; sourceTree = "<group>"; };
+		AAAAAAAAAAAAAAAAAAAAAA202 /* YearlyOverviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearlyOverviewViewModel.swift; sourceTree = "<group>"; };
+		AAAAAAAAAAAAAAAAAAAAAA203 /* YearlyOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearlyOverviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,15 +157,6 @@
 			);
 			sourceTree = "<group>";
 		};
-		111111111111111111111121 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				11111111111111111111111A /* FamilyBudget.app */,
-				11111111111111111111111B /* FamilyBudgetTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		11111111111111111111111F /* FamilyBudget */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +167,27 @@
 				111111111111111111111126 /* Presentation */,
 			);
 			path = FamilyBudget;
+			sourceTree = "<group>";
+		};
+		111111111111111111111120 /* FamilyBudgetTests */ = {
+			isa = PBXGroup;
+			children = (
+				111111111111111111111116 /* FoundationSmokeTests.swift */,
+				333333333333333333333301 /* Domain */,
+				555555555555555555555301 /* Data */,
+				777777777777777777777301 /* Application */,
+				777777777777777777777303 /* Presentation */,
+			);
+			path = FamilyBudgetTests;
+			sourceTree = "<group>";
+		};
+		111111111111111111111121 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11111111111111111111111A /* FamilyBudget.app */,
+				11111111111111111111111B /* FamilyBudgetTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		111111111111111111111122 /* App */ = {
@@ -201,6 +219,7 @@
 				666666666666666666666303 /* FamilyMembers */,
 				888888888888888888888301 /* Income */,
 				999999999999999999999301 /* Credits */,
+				AAAAAAAAAAAAAAAAAAAAAA301 /* YearlyOverview */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -223,20 +242,9 @@
 				666666666666666666666304 /* FamilyMembers */,
 				888888888888888888888302 /* Income */,
 				999999999999999999999302 /* Credits */,
+				AAAAAAAAAAAAAAAAAAAAAA302 /* YearlyOverview */,
 			);
 			path = Presentation;
-			sourceTree = "<group>";
-		};
-		111111111111111111111120 /* FamilyBudgetTests */ = {
-			isa = PBXGroup;
-			children = (
-				111111111111111111111116 /* FoundationSmokeTests.swift */,
-				333333333333333333333301 /* Domain */,
-				555555555555555555555301 /* Data */,
-				777777777777777777777301 /* Application */,
-				777777777777777777777303 /* Presentation */,
-			);
-			path = FamilyBudgetTests;
 			sourceTree = "<group>";
 		};
 		222222222222222222222301 /* ValueObjects */ = {
@@ -289,6 +297,19 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		333333333333333333333301 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				333333333333333333333201 /* MoneyTests.swift */,
+				333333333333333333333202 /* YearMonthTests.swift */,
+				333333333333333333333203 /* IncomeCalculationTests.swift */,
+				333333333333333333333204 /* CreditCalculationTests.swift */,
+				333333333333333333333205 /* BudgetCalculationTests.swift */,
+				777777777777777777777203 /* FamilyMemberNameValidatorTests.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 		444444444444444444444301 /* SwiftDataModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,19 +352,6 @@
 			path = Persistence;
 			sourceTree = "<group>";
 		};
-		333333333333333333333301 /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				333333333333333333333201 /* MoneyTests.swift */,
-				333333333333333333333202 /* YearMonthTests.swift */,
-				333333333333333333333203 /* IncomeCalculationTests.swift */,
-				333333333333333333333204 /* CreditCalculationTests.swift */,
-				333333333333333333333205 /* BudgetCalculationTests.swift */,
-				777777777777777777777203 /* FamilyMemberNameValidatorTests.swift */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
 		555555555555555555555301 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -368,6 +376,23 @@
 				666666666666666666666203 /* SettingsView.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		666666666666666666666303 /* FamilyMembers */ = {
+			isa = PBXGroup;
+			children = (
+				666666666666666666666204 /* FamilyMemberUseCase.swift */,
+			);
+			path = FamilyMembers;
+			sourceTree = "<group>";
+		};
+		666666666666666666666304 /* FamilyMembers */ = {
+			isa = PBXGroup;
+			children = (
+				666666666666666666666205 /* FamilyMembersViewModel.swift */,
+				666666666666666666666206 /* FamilyMembersView.swift */,
+			);
+			path = FamilyMembers;
 			sourceTree = "<group>";
 		};
 		777777777777777777777301 /* Application */ = {
@@ -403,23 +428,6 @@
 				777777777777777777777202 /* SettingsViewModelTests.swift */,
 			);
 			path = Settings;
-			sourceTree = "<group>";
-		};
-		666666666666666666666303 /* FamilyMembers */ = {
-			isa = PBXGroup;
-			children = (
-				666666666666666666666204 /* FamilyMemberUseCase.swift */,
-			);
-			path = FamilyMembers;
-			sourceTree = "<group>";
-		};
-		666666666666666666666304 /* FamilyMembers */ = {
-			isa = PBXGroup;
-			children = (
-				666666666666666666666205 /* FamilyMembersViewModel.swift */,
-				666666666666666666666206 /* FamilyMembersView.swift */,
-			);
-			path = FamilyMembers;
 			sourceTree = "<group>";
 		};
 		777777777777777777777305 /* FamilyMembers */ = {
@@ -480,6 +488,23 @@
 			path = Credits;
 			sourceTree = "<group>";
 		};
+		AAAAAAAAAAAAAAAAAAAAAA301 /* YearlyOverview */ = {
+			isa = PBXGroup;
+			children = (
+				AAAAAAAAAAAAAAAAAAAAAA201 /* YearlyOverviewUseCase.swift */,
+			);
+			path = YearlyOverview;
+			sourceTree = "<group>";
+		};
+		AAAAAAAAAAAAAAAAAAAAAA302 /* YearlyOverview */ = {
+			isa = PBXGroup;
+			children = (
+				AAAAAAAAAAAAAAAAAAAAAA202 /* YearlyOverviewViewModel.swift */,
+				AAAAAAAAAAAAAAAAAAAAAA203 /* YearlyOverviewView.swift */,
+			);
+			path = YearlyOverview;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -526,7 +551,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 2640;
 				TargetAttributes = {
 					111111111111111111111119 = {
 						CreatedOnToolsVersion = 15.0;
@@ -614,6 +639,9 @@
 				999999999999999999999101 /* CreditUseCase.swift in Sources */,
 				999999999999999999999102 /* CreditViewModel.swift in Sources */,
 				999999999999999999999103 /* CreditView.swift in Sources */,
+				AAAAAAAAAAAAAAAAAAAAAA101 /* YearlyOverviewUseCase.swift in Sources */,
+				AAAAAAAAAAAAAAAAAAAAAA102 /* YearlyOverviewViewModel.swift in Sources */,
+				AAAAAAAAAAAAAAAAAAAAAA103 /* YearlyOverviewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -705,6 +733,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -759,6 +788,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -776,13 +806,14 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.familybudget.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -801,13 +832,14 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.familybudget.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -857,15 +889,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		11111111111111111111112F /* Build configuration list for PBXProject "FamilyBudget" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				111111111111111111111130 /* Debug */,
-				111111111111111111111131 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		111111111111111111111127 /* Build configuration list for PBXNativeTarget "FamilyBudget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -880,6 +903,15 @@
 			buildConfigurations = (
 				111111111111111111111134 /* Debug */,
 				111111111111111111111135 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11111111111111111111112F /* Build configuration list for PBXProject "FamilyBudget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				111111111111111111111130 /* Debug */,
+				111111111111111111111131 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

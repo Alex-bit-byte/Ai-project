@@ -5,18 +5,11 @@ struct AppRootView: View {
     @Environment(\.modelContext) private var modelContext
     @StateObject private var settingsViewModel = SettingsViewModel()
     @StateObject private var familyMembersViewModel = FamilyMembersViewModel()
+    @StateObject private var yearlyOverviewViewModel = YearlyOverviewViewModel()
 
     var body: some View {
         NavigationStack {
-            ContentUnavailableView {
-                Label("Семья пока не настроена", systemImage: "person.2")
-            } description: {
-                Text("Начните с настроек, затем добавьте участников семьи.")
-            } actions: {
-                NavigationLink("Добавить участников") {
-                    FamilyMembersView(viewModel: familyMembersViewModel, useCase: makeFamilyMemberUseCase())
-                }
-            }
+            YearlyOverviewView(viewModel: yearlyOverviewViewModel, useCase: makeYearlyOverviewUseCase())
             .navigationTitle("Семейный бюджет")
             .toolbar {
                 NavigationLink {
@@ -68,6 +61,15 @@ struct AppRootView: View {
         CreditUseCase(
             creditRepository: CreditRepository(context: modelContext),
             memberRepository: FamilyMemberRepository(context: modelContext)
+        )
+    }
+
+    private func makeYearlyOverviewUseCase() -> YearlyOverviewUseCase {
+        YearlyOverviewUseCase(
+            memberRepository: FamilyMemberRepository(context: modelContext),
+            incomeRepository: IncomeRepository(context: modelContext),
+            creditRepository: CreditRepository(context: modelContext),
+            settingsRepository: AppSettingsRepository(context: modelContext)
         )
     }
 }
